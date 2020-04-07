@@ -6,5 +6,8 @@
         xmlns:local="clr-namespace:EvaWpf"
         mc:Ignorable="d"
         Title="EvaProject" Height="450" Width="800">
-    <Grid/>
+    <Grid>
+        <Button Content="Нажать здесь" HorizontalAlignment="Center" Margin="540,62,0,0" VerticalAlignment="Top" Height="51" Width="175" Visibility="Visible" Click="Button_Click"/>
+        <ScrollViewer Margin="10,124,0,0" HorizontalAlignment="Left" Width="790" Height="276" VerticalAlignment="Top"/>
+    </Grid>
 </Window>

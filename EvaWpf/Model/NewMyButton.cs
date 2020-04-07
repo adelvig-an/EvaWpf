@@ -13,22 +13,18 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace EvaWpf
+namespace EvaWpf.Model
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : Window
+    class NewMyButton : Button
     {
-
-        public MainWindow()
+        public void CreatButton(Button buttons, string str, int x, int y, int w, int h, RoutedEventHandler revh)
         {
-            InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
+            buttons = new Button();
+            buttons.Content = str;
+            buttons.Margin = new Thickness(x, y, 0, 0);
+            buttons.Width = 50;
+            buttons.Height = 20;
+            buttons.Click += revh;
         }
     }
 }

@@ -6,16 +6,67 @@ namespace EvaWpf.Model
 {
     class ListBuilding
     {
-        public List<BuildingBase> categories { get; set; } = new List<BuildingBase>()
+        public List<Category> categories { get; set; } = new List<Category>()
         {
-            new BuildingBase
+            new Category
             {
                 Name = "Жилая недвижимость",
                 Items = new List<BuildingBase>(new List<Dwelling>()
                 {
                     new Dwelling("Квартира")
                 })
-            }
-        }
+            },
+            new Category
+            {
+                Name = "Нежилое помещение",
+                Items = new List<BuildingBase>(new List<Dwelling>()
+                {
+                    new Dwelling("Офисно-торговый объект свободного назначения"),
+                    new Dwelling("Офисы класса А, В"),
+                    new Dwelling("Торговая недвижимость"),
+                    new Dwelling("Производственно-складская недвижимость")
+                })
+
+            },
+            new Category
+            {
+                Name = "Здание",
+                Items = new List<BuildingBase>(new List<Dwelling>()
+                {
+                    new Dwelling("Жилой дом"),
+                    new Dwelling("Офисно-торговый объект свободного назначения"),
+                    new Dwelling("Офисы класса А, В"),
+                    new Dwelling("Торговая недвижимость"),
+                    new Dwelling("Производственно-складская недвижимость")
+                })
+
+            },
+            new Category
+            {
+                Name = "Здание с земельным участком",
+                Items = new List<BuildingBase>(new List<Dwelling>()
+                {
+                    new Dwelling("Жилой дом"),
+                    new Dwelling("Офисно-торговый объект свободного назначения"),
+                    new Dwelling("Офисы класса А, В"),
+                    new Dwelling("Торговая недвижимость"),
+                    new Dwelling("Производственно-складская недвижимость")
+                })
+
+            },
+            new Category
+            {
+                Name = "Земельный участок",
+                Items = new List<BuildingBase>(new List<Dwelling>()
+                {
+                    new Dwelling("Под индустриальную застройку"),
+                    new Dwelling("Под офисно-торговую застройку"),
+                    new Dwelling("Под многоквартирную жилую застройку"),
+                    new Dwelling("Под объекты рекреации"),
+                    new Dwelling("Под объекты придорожного сервиса")
+                })
+
+            },
+        };
     }
 }
